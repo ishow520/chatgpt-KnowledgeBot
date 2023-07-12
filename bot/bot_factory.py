@@ -34,12 +34,16 @@ def create_bot(bot_type):
 
         return AzureChatGPTBot()
 
-    elif bot_type == const.LINKAI:
-        from bot.linkai.link_ai_bot import LinkAIBot
-        return LinkAIBot()
+    # elif bot_type == const.LINKAI:
+    #     from bot.linkai.link_ai_bot import LinkAIBot
+    #     return LinkAIBot()
 
     elif bot_type == const.luolinai:
         from bot.luolinai.luolinai_bot import luolinaiBot
         return luolinaiBot()
+    
+    elif bot_type == const.DIFY:
+        from bot.dify.dify_bot import DifyAiBot
+        return DifyAiBot()
 
     raise RuntimeError("Unsupported bot type: {}".format(bot_type))

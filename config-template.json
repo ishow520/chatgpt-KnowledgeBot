@@ -1,29 +1,19 @@
 {
   "luolinai_api_key": "YOUR_LUOLINAI_API_KEY",
   "luolinai_model_id": "YOUR_LUOLINAI_MODEL_ID",
-    "base_url":"https://api.gojiberrys.cn/api/openapi",
+  "base_url": "https://api.dify.ai/v1",
+  "dify_api_key": "app-K1Hda26rCpJcqWCT2o9ruJye",
+  "user": "sm",
+  "conversation_id": "67a4628a-d7d8-4c31-8f45-78052b04194c",
   "max_single_chat_replies": 100,
   "max_group_chat_replies": 100,
   "ad_message": "此处广告",
-  "single_chat_prefix": [
-    "bot",
-    "@bot"
-  ],
+  "single_chat_prefix": ["bot", "@bot"],
   "single_chat_reply_prefix": "[bot] ",
-  "group_chat_prefix": [
-    "@bot"
-  ],
-  "group_name_white_list": [
-    "ALL_GROUP"
-  ],
-  "group_chat_in_one_session": [
-    "ALL_GROUP"
-  ],
-  "image_create_prefix": [
-    "画",
-    "看",
-    "找"
-  ],
+  "group_chat_prefix": ["@bot"],
+  "group_name_white_list": ["ALL_GROUP"],
+  "group_chat_in_one_session": ["ALL_GROUP"],
+  "image_create_prefix": ["画", "看", "找"],
   "speech_recognition": false,
   "group_speech_recognition": false,
   "voice_reply_voice": false,

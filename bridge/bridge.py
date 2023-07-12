@@ -25,6 +25,8 @@ class Bridge(object):
             self.btype["chat"] = const.CHATGPTONAZURE
         if conf().get("luolinai_api_key"):
             self.btype["chat"] = const.luolinai
+        if conf().get("dify_api_key"):
+            self.btype["chat"] = const.DIFY
         self.bots = {}
 
     def get_bot(self, typename):

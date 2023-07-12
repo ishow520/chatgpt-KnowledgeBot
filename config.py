@@ -107,6 +107,12 @@ available_setting = {
     "luolinai_api_key": "",  # your_luolinai_api_key
     "chat_id": "",  # your_chat_id
     "luolinai_model_id": "",  # your_model_id
+    # dify知识库平台配置dify
+    "dify_api_key": "",  # your_dify_api_key
+    "response_mode":"blocking", # blocking or streaming
+    "user":"",
+    "inputs":{},
+    "conversation_id":"",
     "max_single_chat_replies": "",
     "max_group_chat_replies": "",
     "ad_message": "",
