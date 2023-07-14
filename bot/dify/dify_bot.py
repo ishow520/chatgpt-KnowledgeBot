@@ -8,6 +8,7 @@ from bridge.reply import Reply, ReplyType
 from bot.bot import Bot
 from bot.chatgpt.chat_gpt_session import ChatGPTSession
 from bot.session_manager import SessionManager
+from bot.dify.dify_conversation import get_conversation_id,update_conversation_id
 from config import conf
 
 
@@ -65,7 +66,8 @@ class DifyAiBot(Bot):
             dify_api_key = conf().get("dify_api_key")
             response_mode = conf().get("response_mode")
             user = conf().get("user")
-            conversation_id = conf().get("conversation_id")
+            conversation_id = get_conversation_id()
+            print("conversation_id:=====",conversation_id)
 
             prompts = []
             for msg in session.messages:
@@ -93,8 +95,9 @@ class DifyAiBot(Bot):
             if response.status_code == 200:
                 res = response.json()
                 chat_reply = res.get("answer")
-                conversation_id = res.get("conversation_id")
-
+                new_conversation_id = res.get("conversation_id")
+                update_conversation_id(new_conversation_id)
+               
                 # 在这里修改广告信息的处理部分
                 ad_message = conf().get("ad_message")
                 if isinstance(chat_reply, str) and ad_message:

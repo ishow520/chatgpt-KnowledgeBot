@@ -45,5 +45,9 @@ def create_bot(bot_type):
     elif bot_type == const.DIFY:
         from bot.dify.dify_bot import DifyAiBot
         return DifyAiBot()
+    
+    elif bot_type == const.FASTAI:
+        from bot.fastai.fastai_bot import FastAiBot
+        return FastAiBot()
 
     raise RuntimeError("Unsupported bot type: {}".format(bot_type))

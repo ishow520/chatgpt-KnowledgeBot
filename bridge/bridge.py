@@ -27,6 +27,8 @@ class Bridge(object):
             self.btype["chat"] = const.luolinai
         if conf().get("dify_api_key"):
             self.btype["chat"] = const.DIFY
+        if conf().get("fast_ai_key"):
+            self.btype["chat"] = const.FASTAI
         self.bots = {}
 
     def get_bot(self, typename):

@@ -112,7 +112,12 @@ available_setting = {
     "response_mode":"blocking", # blocking or streaming
     "user":"",
     "inputs":{},
-    "conversation_id":"",
+    # end
+    # fastGPT私有库搭建
+    "fast_ai_base":"https://fastgpt.minihack.cn/api/openapi",
+    "fast_ai_key":"fastgpt-232hm402gl1m49emr2e1me0m",
+    "fast_ai_appid":"64aba33a501da8829a27bff7",
+    #end
     "max_single_chat_replies": "",
     "max_group_chat_replies": "",
     "ad_message": "",

@@ -6,5 +6,6 @@ CHATGPTONAZURE = "chatGPTOnAzure"
 LINKAI = "linkai"
 luolinai = "luolinai"
 DIFY = "dify"
+FASTAI = "fastai"
 
 VERSION = "1.3.0"
